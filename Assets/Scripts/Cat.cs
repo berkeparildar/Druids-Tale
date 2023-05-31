@@ -1,51 +1,62 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
 
 public class Cat : Player
 {
-    private BoxCollider _boxCollider;
-    // Start is called before the first frame update
-    void Start()
+    private AnimatorStateInfo _stateInfo;
+    private void Start()
     {
-        Speed = 6.0f;
+        Speed = 9.0f;
+        IsJumping = false;
+        IsOnGround = true;
         CurrentForm = "cat";
-        JumpForce = new Vector3(0, 5, 0);
+        JumpForce = 2;
         Health = 75;
-        CatScript = GetComponent<Cat>();
-        PlayerScript = GetComponent<Player>();
-        CharacterController = GetComponent<CharacterController>();
-        _boxCollider = GetComponent<BoxCollider>();
-        _boxCollider.enabled = true;
+        Animator = transform.GetChild(1).GetComponent<Animator>();
+        
     }
 
-    protected override void Movement()
+    private void FixedUpdate()
     {
-        var verticalInput = Input.GetAxis("Vertical");
-        var movementVector = verticalInput * Speed * transform.forward;
-        transform.Translate(movementVector * Time.deltaTime);
+        Movement();
+    }
+    
+    private void Update()
+    {
+        AbilityCheck();
+        Morph();
+        GetInput();
+        _stateInfo = Animator.GetCurrentAnimatorStateInfo(0);
+        if (_stateInfo.IsName("Base Layer.Spell One"))
+        {
+            Debug.Log("in attack anim");
+            if (_stateInfo.normalizedTime >= 0.9f)
+            {
+                IsCasting = false;
+            }
+        }
     }
 
     protected override void Morph()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            PlayerScript.enabled = true;
-            _boxCollider.enabled = false;
+            HumanScript.enabled = true;
+            CatModel.SetActive(false);
+            HumanModel.SetActive(true);
             CatScript.enabled = false;
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
-            
             // bear script
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void SpecialAbilityOne()
     {
-        Morph();
-        Movement();
+        Animator.SetTrigger(CastSpellOne);
+        IsCasting = true;
     }
 }

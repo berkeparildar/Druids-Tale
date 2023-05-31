@@ -1,15 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78b8c272-aef3-4ce2-bc43-93e8954ff9cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FromAssetStore.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Wrath.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Wrath.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bear.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bear.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Human.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Human.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WrathAbility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WrathAbility.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/player_anim_controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/player_anim_controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Jump.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Jump.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Jumping.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Jumping.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Left Strafe.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Left Strafe.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Left Turn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Left Turn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Right Strafe.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Right Strafe.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Right Turn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Right Turn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Running Backward.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Running Backward.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Running.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Running.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Slow Run.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Slow Run.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/player_anim_controller.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/player_anim_controller.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Model/akai_e_espiritu.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Model/akai_e_espiritu.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Hit.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Hit.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/Eyes_outer.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/Eyes_outer.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/NormalMap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/NormalMap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/texture.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/texture.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/texture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/TigerSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/TigerSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Walk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Walk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/run.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/run.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/sound.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/sound.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/tiger.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/tiger.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/tiger_idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/tiger_idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +95,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/afb51423a29947c09a21689e8d96b70a1a000/ad/4d1e18c1/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SE320_Project/Assets/Scripts/Bullet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bear.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Human.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAnimationEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shred.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WrathAbility.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2Ob4XFdOIpUMOS9lamQNt8n5ewK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,13 +120,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -103,15 +188,37 @@
       <workItem from="1681902900725" duration="3943000" />
       <workItem from="1681953986654" duration="983000" />
       <workItem from="1682018372667" duration="1930000" />
+      <workItem from="1682423332098" duration="73000" />
+      <workItem from="1682724206233" duration="1034000" />
+      <workItem from="1682725273074" duration="861000" />
+      <workItem from="1684229952735" duration="7673000" />
+      <workItem from="1684405868466" duration="6940000" />
+      <workItem from="1684805407050" duration="57000" />
+      <workItem from="1684805683193" duration="4664000" />
+      <workItem from="1684816705190" duration="13111000" />
+      <workItem from="1685069023350" duration="146000" />
+      <workItem from="1685109504488" duration="435000" />
+      <workItem from="1685137224066" duration="10000" />
+      <workItem from="1685142374362" duration="100000" />
+      <workItem from="1685149858424" duration="7000" />
+      <workItem from="1685237013688" duration="1991000" />
+      <workItem from="1685277381633" duration="14346000" />
+      <workItem from="1685363304817" duration="23598000" />
+      <workItem from="1685441462409" duration="1603000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
