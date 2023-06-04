@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5435069573154657731}
   - component: {fileID: 5435069573154657728}
-  - component: {fileID: 4032731688916886902}
+  - component: {fileID: -843459371161301743}
   m_Layer: 0
   m_Name: Wrath
   m_TagString: Untagged
@@ -131,7 +131,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4032731688916886902
+--- !u!114 &-843459371161301743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5435069573154657735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 891e6c951a388b24e99f3750c93ffd67, type: 3}
+  m_Script: {fileID: 11500000, guid: a94bc5f3c941d1b44a17e28864a916ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: {x: 0, y: 0, z: 0}

@@ -14,12 +14,14 @@ public class EnemyAnimationHit : MonoBehaviour
         _player = GameObject.Find("Player").GetComponent<Player>();
         _enemy = transform.GetComponentInParent<Enemy>();
     }
+    
 
     // Update is called once per frame
     void Update()
     {
         
     }
+    
 
     public void HitPlayer(){
         if (_sword.inContact)

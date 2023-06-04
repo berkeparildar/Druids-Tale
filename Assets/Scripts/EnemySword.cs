@@ -18,7 +18,6 @@ public class EnemySword : MonoBehaviour
     }
    
     private void OnTriggerStay(Collider col){
-        Debug.Log("In collision");
         if (col.gameObject.name == "Player")
         {
             inContact = true;

@@ -1,9 +1,11 @@
+using DG.Tweening;
 using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     private static readonly int HasTarget = Animator.StringToHash("hasTarget");
     private static readonly int Attacking = Animator.StringToHash("attacking");
-    protected int Health;
+    protected float Health;
+    protected float MaxHealth;
     public int Damage;
     public bool attackEnded;
     protected float Speed;
@@ -19,7 +21,9 @@ public class Enemy : MonoBehaviour {
   // Start is called before the first frame update
     void Start()
     {
-        Health = 70;
+        Damage = 10;
+        MaxHealth = 70;
+        Health = MaxHealth;
         attackEnded = true;
         Animator = transform.GetChild(0).GetComponent<Animator>();
         Speed = 4.0f;
@@ -31,7 +35,6 @@ public class Enemy : MonoBehaviour {
 
   // Update is called once per frame
     void Update() {
-        Debug.Log(Health);
         AnimationUpdate();
         DetectPlayer();
         if (_isChasing)

@@ -1,22 +1,48 @@
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public class Human : Player
 {
     private AnimatorStateInfo _stateInfo;
-
     public GameObject healingEffect;
+    private float _mana;
+    private float _maxMana;
+    public  Sprite abilityOneIcon;
+    public Sprite abilityTwoIcon;
+    public Sprite nextForm;
+    public Sprite previousForm;
+
+
     // Start is called before the first frame update
     private void Start()
     {
         IsJumping = false;
-        IsOnGround = true;
         CurrentForm = "human";
-        Health = 100;
+        MaxHealth = 100;
+        Health = MaxHealth;
+        _maxMana = 100;
+        _mana = _maxMana;
         JumpForce = 5.0f;
         Speed = 5.0f;
         Animator = transform.GetChild(0).GetComponent<Animator>();
-        _stateInfo = Animator.GetCurrentAnimatorStateInfo(0);
+        ResourceColor = new Color(0, 0, 1, 0.59f);
+        ResourceImage.color = ResourceColor;
+        ResourceImage.fillAmount = 1;   
+        AbilityOneSlot.sprite = abilityOneIcon;
+        AbilityTwoSlot.sprite = abilityTwoIcon;
+        PreviousFormSlot.sprite = previousForm;
+        NextFormSlot.sprite = nextForm;
+    }
+
+    private void OnEnable()
+    {
+        ResourceImage.color = ResourceColor;
+        ResourceImage.fillAmount = _mana / _maxMana;
+        AbilityOneSlot.sprite = abilityOneIcon;
+        AbilityTwoSlot.sprite = abilityTwoIcon;
+        PreviousFormSlot.sprite = previousForm;
+        NextFormSlot.sprite = nextForm;
     }
 
     // Update is called once per frame
@@ -26,9 +52,8 @@ public class Human : Player
         Morph();
         GetInput();
         _stateInfo = Animator.GetCurrentAnimatorStateInfo(0);
-        if (_stateInfo.IsName("Base Layer.Spell One"))
+        if (_stateInfo.IsName("Base Layer.Spell One") ||_stateInfo.IsName("Base Layer.Spell Two"))
         {
-            Debug.Log("in attack anim");
             if (_stateInfo.normalizedTime >= 0.9f)
             {
                 IsCasting = false;
@@ -40,7 +65,7 @@ public class Human : Player
     {
         Movement();
     }
-    
+
     protected override void Morph()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -58,13 +83,23 @@ public class Human : Player
 
     protected override void SpecialAbilityOne()
     {
-        StartCoroutine(Regeneration());
+        if (AbilityOneReady)
+        {
+            IsCasting = true;
+            Animator.SetTrigger(CastSpellOne);
+            AbilityCooldown(1, 7);
+        }
     }
 
     protected override void SpecialAbilityTwo()
     {
-        IsCasting = true;
-        Animator.SetTrigger(CastSpellOne);
+        if (AbilityTwoReady)
+        {
+            IsCasting = true;
+            StartCoroutine(Regeneration());
+            Animator.SetTrigger(CastSpellTwo);
+            AbilityCooldown(2, 10);
+        }
     }
 
     private IEnumerator Regeneration()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAnimationEvents : MonoBehaviour
 {
-
+    private Player _player;
     public GameObject wrathModel;
     public GameObject wrathAbility;
     public Transform wrathInit;
@@ -23,7 +23,7 @@ public class PlayerAnimationEvents : MonoBehaviour
     public void InitializeWrath()
     {
         var wrath = Instantiate(wrathAbility, wrathInit.position, Quaternion.identity);
-        wrath.GetComponent<WrathAbility>().SetDirection(transform.forward);
+        wrath.GetComponent<Wrath>().SetDirection(transform.forward);
     }
 
     public void ActivateShredHitBox()

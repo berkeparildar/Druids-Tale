@@ -8,83 +8,500 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78b8c272-aef3-4ce2-bc43-93e8954ff9cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FromAssetStore.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Wrath.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Wrath.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bear.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bear.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Human.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Human.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WrathAbility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WrathAbility.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Ground2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Ground2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword15_Lava.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword15_Lava.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_FBX.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_FBX.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_Material_Earth.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_Material_Earth.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_Material_Frost.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_Material_Frost.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_Material_Iron.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_Material_Iron.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_Material_Lava.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Sword15_Material_Lava.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Albedo_Earth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Albedo_Earth.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Albedo_Frost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Albedo_Frost.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Albedo_Iron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Albedo_Iron.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Albedo_Lava.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Albedo_Lava.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Emission_Earth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Emission_Earth.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Emission_Frost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Emission_Frost.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Emission_Iron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Emission_Iron.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Emission_Lava.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Emission_Lava.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Metallic_Earth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Metallic_Earth.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Metallic_Frost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Metallic_Frost.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Metallic_Iron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Metallic_Iron.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Metallic_Lava.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Metallic_Lava.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Normal_Earth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Normal_Earth.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Normal_Frost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Normal_Frost.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Normal_Iron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Normal_Iron.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Normal_Lava.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Sword15/Textures/Sword15_Normal_Lava.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Arrow1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Arrow1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Circle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Circle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/DistortionPoint.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/DistortionPoint.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Electro.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Electro.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Flare.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Flare.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Flash.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Flash.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Floor3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Floor3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Gradient.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Gradient.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Heart.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Heart.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/MagicCircle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/MagicCircle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/MagicCircle2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/MagicCircle2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Mask1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Mask1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Point.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Point.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Slash.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Slash.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Smoke26.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Smoke26.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Snowflake.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Snowflake.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Star.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Star.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Stone.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Stone.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Trail67.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/Trail67.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/VFXatlas.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Materials/VFXatlas.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Models/Cylinder.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Models/Cylinder.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/AoE effects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/AoE effects/Meteors AOE.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/AoE effects/Meteors AOE.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/AoE effects/Snow AOE.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/AoE effects/Snow AOE.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Buff.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Buff.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Debuff.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Debuff.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Healing.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Healing.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Lightning aura.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Lightning aura.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Love aura.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Love aura.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Star aura.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Character auras/Star aura.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Electro hit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Electro hit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Explosion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Explosion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Green hit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Green hit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Holy hit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Holy hit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Love hit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Love hit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Snow hit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Snow hit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Star hit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Star hit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Stones hit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Stones hit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Freeze circle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Freeze circle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Healing circle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Healing circle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Magic circle 2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Magic circle 2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Magic circle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Magic circle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal yellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal yellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Slash effects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Slash effects/Electro slash.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Slash effects/Electro slash.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Slash effects/Snow slash.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Slash effects/Snow slash.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Slash effects/Stone slash.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Slash effects/Stone slash.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Arrow1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Arrow1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Concrete slab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Concrete slab.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Concrete slab_Height.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Concrete slab_Height.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Concrete slab_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Concrete slab_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Concrete slab_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Concrete slab_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Electro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Electro.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Flare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Flare.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Flash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Flash.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Gradient.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Gradient.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/MagicCircle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/MagicCircle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/MagicCircle2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/MagicCircle2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Mask1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Point1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Point1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Point1n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Point1n.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Slash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Slash.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Smoke26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Smoke26.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Snowflake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Snowflake.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Splat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Splat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Star.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Stone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Trail67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Magic effects pack/Textures/Trail67.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Resources/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Resources/Settings/PP low.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Hovl Studio/Resources/Settings/PP low.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Flowers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Flowers/PT_Poppy_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Flowers/PT_Poppy_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Mushrooms.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Mushrooms/PT_Caesars_Mushroom_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Mushrooms/PT_Caesars_Mushroom_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Plants.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Plants/PT_Grass_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Plants/PT_Grass_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Generic_Rock_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Generic_Rock_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Menhir_Rock_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Menhir_Rock_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Ore_Rock_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Ore_Rock_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Ore_Rock_01_split.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Ore_Rock_01_split.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_River_Rock_Pile_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_River_Rock_Pile_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Shrubs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Shrubs/PT_Generic_Shrub_01_dead.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Shrubs/PT_Generic_Shrub_01_dead.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Shrubs/PT_Generic_Shrub_01_green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Shrubs/PT_Generic_Shrub_01_green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_apples.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_apples.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_dead.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_dead.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_dead_cut.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_dead_cut.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_green_cut.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_green_cut.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_logs.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_logs.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_pears.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_pears.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_plums.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_plums.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_stump.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_stump.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_dead.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_dead.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_dead_cut.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_dead_cut.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_green_cut.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_green_cut.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_logs.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_logs.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_stump.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_stump.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/SRP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/SRP/PT_Nature_Free_URP_10.10.1.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/SRP/PT_Nature_Free_URP_12.1.10.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Fruit_Tree_Foliage_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Fruit_Tree_Foliage_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Fruit_Tree_Opaque_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Fruit_Tree_Opaque_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Leaf_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Leaf_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Tree_Leaves_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Tree_Leaves_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Tree_Trunk_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Tree_Trunk_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Grass_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Grass_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Mushrooms_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Mushrooms_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Pine_Tree_Leaves_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Pine_Tree_Leaves_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Pine_Tree_Trunk_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Pine_Tree_Trunk_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Poppy_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Poppy_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Rocks_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Rocks_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Terrain_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Terrain_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Water_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Water_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Flowers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Flowers/PT_Poppy_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Flowers/PT_Poppy_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Mushrooms.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Mushrooms/PT_Caesars_Mushroom_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Mushrooms/PT_Caesars_Mushroom_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Plants.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Plants/PT_Grass_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Plants/PT_Grass_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_Generic_Rock_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_Generic_Rock_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_Menhir_Rock_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_Menhir_Rock_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_Ore_Rock_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_Ore_Rock_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_Ore_Rock_01_split.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_Ore_Rock_01_split.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_River_Rock_Pile_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Rocks/PT_River_Rock_Pile_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Shrubs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Shrubs/PT_Generic_Shrub_01_dead.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Shrubs/PT_Generic_Shrub_01_dead.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Shrubs/PT_Generic_Shrub_01_green.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Shrubs/PT_Generic_Shrub_01_green.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_apples.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_apples.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_dead.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_dead.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_dead_cut.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_dead_cut.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_green.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_green.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_green_cut.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_green_cut.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_logs.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_logs.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_pears.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_pears.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_plums.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_plums.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_stump.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_stump.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_dead.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_dead.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_dead_cut.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_dead_cut.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_green.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_green.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_green_cut.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_green_cut.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_logs.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_logs.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_stump.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_stump.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Rock_Shader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Rock_Shader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Rock_Shader_VS.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Rock_Shader_VS.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Flowers_Shader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Flowers_Shader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Flowers_Shader_VS.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Flowers_Shader_VS.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Foliage_Shader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Foliage_Shader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Foliage_Shader_VS.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Foliage_Shader_VS.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Opaque_Shader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Opaque_Shader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Opaque_Shader_VS.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Opaque_Shader_VS.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Plants_Shader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Plants_Shader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Plants_Shader_VS.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Vegetation_Plants_Shader_VS.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Water_Shader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Water_Shader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Water_Shader_WebGl.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/PT_Water_Shader_WebGl.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/VS_indirect.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Shaders/VS_indirect.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Fruit_Tree_Flowers_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Fruit_Tree_Flowers_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Fruit_Tree_Leaves_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Fruit_Tree_Leaves_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Generic_Leaves_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Generic_Leaves_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Generic_Tree_Leaves_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Generic_Tree_Leaves_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_High_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_High_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_High_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_High_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_High_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Grass_High_03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Ground_Generic_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Ground_Generic_03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Ground_Grass_Green_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Ground_Grass_Green_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Mushrooms_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Mushrooms_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Pine_Tree_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Pine_Tree_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Poppy_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Poppy_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Rocks_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Rocks_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Runes_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Runes_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Skybox_Texture_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Skybox_Texture_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Tree_Trunk_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Tree_Trunk_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Water_NM_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Textures/PT_Water_NM_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Modular_Fence_Wood_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Modular_Fence_Wood_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Modular_Fence_Wood_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Modular_Fence_Wood_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Modular_Fence_Wood_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Modular_Fence_Wood_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Modular_Gate_Wood_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Modular_Gate_Wood_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Wooden_Bridge_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Prefabs/PT_Wooden_Bridge_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Materials/PT_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Materials/PT_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Modular_Fence_Wood_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Modular_Fence_Wood_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Modular_Fence_Wood_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Modular_Fence_Wood_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Modular_Fence_Wood_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Modular_Fence_Wood_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Modular_Gate_Wood_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Modular_Gate_Wood_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Wooden_Bridge_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Meshes/PT_Wooden_Bridge_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Textures/PT_texture.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FromAssetStore/Polytope Studio/Lowpoly_Village/Sources/Textures/PT_texture.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Animations/InPlace/cat.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Animations/InPlace/cat.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/player_anim_controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Human/Animations/player_anim_controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer 1.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer 1.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wrath.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wrath.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAnimationHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAnimationHit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Human.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Idle.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Idle.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Jump.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Jump.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Jumping.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Jumping.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Left Strafe.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Left Strafe.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Left Turn.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Left Turn.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Right Strafe.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Right Strafe.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Right Turn.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Right Turn.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Running Backward.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Running Backward.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Running.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Running.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Slow Run.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/akai_e_espiritu@Slow Run.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/player_anim_controller.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animations/player_anim_controller.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Model.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Model/akai_e_espiritu.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Model/akai_e_espiritu.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Hit.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Hit.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/Eyes_outer.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/Eyes_outer.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/NormalMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/NormalMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/texture.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/texture.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Materials/texture.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/TigerSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/TigerSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Walk.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/Walk.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/run.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/run.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/sound.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/sound.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/tiger.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/tiger.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/tiger_idle.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiger/tiger_idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WrathAbility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WrathAbility.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +622,11 @@
       <workItem from="1685277381633" duration="14346000" />
       <workItem from="1685363304817" duration="23598000" />
       <workItem from="1685441462409" duration="1603000" />
+      <workItem from="1685831416439" duration="124000" />
+      <workItem from="1685831589809" duration="70000" />
+      <workItem from="1685831902177" duration="23000" />
+      <workItem from="1685831969632" duration="2996000" />
+      <workItem from="1685837300554" duration="4177000" />
     </task>
     <servers />
   </component>
