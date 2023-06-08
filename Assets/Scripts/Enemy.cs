@@ -5,6 +5,9 @@ public class Enemy : MonoBehaviour
 {
     private static readonly int HasTarget = Animator.StringToHash("hasTarget");
     private static readonly int Attacking = Animator.StringToHash("attacking");
+    public GameObject healthBarPrefab;
+    private GameObject _healthBar;
+    private HealthBar _healthBarComponent;
     protected float Health;
     protected float MaxHealth;
     public int Damage;
@@ -37,6 +40,9 @@ public class Enemy : MonoBehaviour
         _player = GameObject.Find("Player"); //TODO: this is causing problems
         _playerTransform = _player.transform;
         IsAlive = true;
+        // I am guessing where I set the position does not matter since it is set in the health-bar's start function
+        _healthBar = Instantiate(healthBarPrefab, transform.position, Quaternion.identity);
+        _healthBarComponent = _healthBar.GetComponent<HealthBar>();
     }
 
     // Update is called once per frame
@@ -44,15 +50,14 @@ public class Enemy : MonoBehaviour
     {
         if (IsAlive)
         {
+            _healthBarComponent.SetPositionAndHealth(transform.position, (Health / 70));
             CheckPlayerAlive();
-            Debug.Log(Health);
             AnimationUpdate();
             DetectPlayer();
             if (_isChasing)
             {
                 ChasePlayer();
             }
-            FaceHealthBar();
         }
     }
 
@@ -98,10 +103,18 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Health -= damage;
-        if (Health <= 0)
+        if (Health > 0)
         {
-            Animator.SetTrigger(Die);
+            Health -= damage;
+        }
+        else
+        {
+            if (IsAlive)
+            {
+                Animator.SetTrigger(Die);
+            }
+            IsAlive = false;
+            Destroy(_healthBar);
             Destroy(this.gameObject, 3);
         }
     }
@@ -119,15 +132,5 @@ public class Enemy : MonoBehaviour
             _attacking = false;
             _isChasing = false;
         }
-    }
-
-    private void FaceHealthBar()
-    {
-        var healthBar = transform.GetChild(1);
-        var targetDirection = _playerTransform.position - transform.position;
-        var targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
-        ;
-        healthBar.localRotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 160 * 
-            Time.deltaTime);
     }
 }

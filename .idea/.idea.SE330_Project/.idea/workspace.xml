@@ -9,31 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="78b8c272-aef3-4ce2-bc43-93e8954ff9cf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Animations/InPlace/Tiger_IP_Death2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Animations/InPlace/Tiger_IP_Death2.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Animations/InPlace/cat.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Animations/InPlace/cat.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Edited Animations/Spell One.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Edited Animations/Spell One.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/Animations/Enemy Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Animations/Enemy Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/Animations/Enemy_model.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Animations/Enemy_model.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/player_anim_controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Human/Animations/player_anim_controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floating Moving Rock.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floating Moving Rock.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floating Rock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floating Rock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/DiabloicUI/Assets/actionbutton-mask-square.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalTextures/DiabloicUI/Assets/actionbutton-mask-square.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAnimationHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAnimationHit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySword.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Human.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpecialPlatforms.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpecialPlatforms.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shred.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shred.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrains/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrains/New Terrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +42,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\berke\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\berke\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\berke\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\berke\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\berke\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\berke\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Development Tools\Unity Editor\2021.3.23f1\Editor\Unity.exe" />
@@ -161,6 +141,7 @@
       <workItem from="1686098957904" duration="23000" />
       <workItem from="1686099088457" duration="4964000" />
       <workItem from="1686142927266" duration="30586000" />
+      <workItem from="1686238057417" duration="1928000" />
     </task>
     <servers />
   </component>

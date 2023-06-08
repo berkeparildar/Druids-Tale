@@ -27,12 +27,6 @@ public class Human : Player
         StartCoroutine(RegenerateMana());
     }
 
-    private void OnEnable()
-    {
-        ResourceImage.color = ResourceColor;
-        ResourceImage.fillAmount = Mana / _maxMana;
-    }
-
     // Update is called once per frame
     void Update()
     {

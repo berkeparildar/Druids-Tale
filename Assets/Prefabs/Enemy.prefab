@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41227fea8974044a9380d40cc418e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBarPrefab: {fileID: 2927878480503544081, guid: 7c77914b32d411c4bb4f51ce6f3db51c, type: 3}
   Damage: 25
   attackEnded: 0
 --- !u!143 &554703074871962152

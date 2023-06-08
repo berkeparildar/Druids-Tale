@@ -40,7 +40,7 @@ public class Cat : Player
     {
         var position = transform.position;
         var raycastPos = new Vector3(position.x, position.y + 1, position.z);
-        if (Physics.Raycast(raycastPos, transform.forward, out var hit, 1, enemyLayer))
+        if (Physics.Raycast(raycastPos, transform.forward, out var hit, 1.6f, enemyLayer))
         {
             if (hitBite)
             {
@@ -74,16 +74,19 @@ public class Cat : Player
 
     protected override void Morph()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (!IsCasting)
         {
-            HumanScript.enabled = true;
-            CatModel.SetActive(false);
-            HumanModel.SetActive(true);
-            CatScript.enabled = false;
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            // bear script
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                HumanScript.enabled = true;
+                CatModel.SetActive(false);
+                HumanModel.SetActive(true);
+                CatScript.enabled = false;
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
+                // bear script
+            }
         }
     }
 
