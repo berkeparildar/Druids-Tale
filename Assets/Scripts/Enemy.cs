@@ -1,7 +1,8 @@
 using DG.Tweening;
 using UnityEngine;
-public class Enemy : MonoBehaviour {
 
+public class Enemy : MonoBehaviour
+{
     private static readonly int HasTarget = Animator.StringToHash("hasTarget");
     private static readonly int Attacking = Animator.StringToHash("attacking");
     protected float Health;
@@ -17,8 +18,11 @@ public class Enemy : MonoBehaviour {
     protected float AttackRange;
     protected Animator Animator;
     protected CharacterController CharacterController;
-    
-  // Start is called before the first frame update
+    private GameObject _player;
+    private static readonly int Die = Animator.StringToHash("die");
+    protected bool IsAlive;
+
+    // Start is called before the first frame update
     void Start()
     {
         Damage = 10;
@@ -30,41 +34,58 @@ public class Enemy : MonoBehaviour {
         AgroRange = 15;
         AttackRange = 1.5f;
         CharacterController = GetComponent<CharacterController>();
-        _playerTransform = GameObject.Find("Player").transform;
+        _player = GameObject.Find("Player"); //TODO: this is causing problems
+        _playerTransform = _player.transform;
+        IsAlive = true;
     }
 
-  // Update is called once per frame
-    void Update() {
-        AnimationUpdate();
-        DetectPlayer();
-        if (_isChasing)
+    // Update is called once per frame
+    void Update()
+    {
+        if (IsAlive)
         {
-            ChasePlayer();
+            CheckPlayerAlive();
+            Debug.Log(Health);
+            AnimationUpdate();
+            DetectPlayer();
+            if (_isChasing)
+            {
+                ChasePlayer();
+            }
+            FaceHealthBar();
         }
     }
 
-    private void DetectPlayer() {
+    private void DetectPlayer()
+    {
         var playerDistance =
-        Vector3.Distance(transform.position, _playerTransform.position);
-        if (playerDistance < AgroRange) {
+            Vector3.Distance(transform.position, _playerTransform.position);
+        if (playerDistance < AgroRange)
+        {
             _isChasing = true;
-        }  
-        else {
+        }
+        else
+        {
             _isChasing = false;
         }
     }
 
-    private void ChasePlayer() {
+    //TODO: Enemy AI as dum as me, need fix
+    private void ChasePlayer()
+    {
         var targetDirection = _playerTransform.position - transform.position;
-        var targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);;
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 160 * Time.deltaTime);
+        var targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+        ;
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 160 * 
+            Time.deltaTime);
         var playerDistance = Vector3.Distance(_playerTransform.position, transform.position);
         if (playerDistance < AttackRange)
         {
             _attacking = true;
             attackEnded = false;
         }
-        else {   
+        else
+        {
             _attacking = false;
             // transform.Translate(Vector3.forward * (Time.deltaTime * Speed));
         }
@@ -75,20 +96,38 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    public void TakeDamage(int damage){
+    public void TakeDamage(int damage)
+    {
         Health -= damage;
         if (Health <= 0)
         {
-            //die 
+            Animator.SetTrigger(Die);
+            Destroy(this.gameObject, 3);
         }
     }
 
-    private void AnimationUpdate(){
+    private void AnimationUpdate()
+    {
         Animator.SetBool(HasTarget, _isChasing);
         Animator.SetBool(Attacking, _attacking);
     }
 
-    protected void Attack(){
-        
+    protected void CheckPlayerAlive()
+    {
+        if (!Player.IsAlive)
+        {
+            _attacking = false;
+            _isChasing = false;
+        }
+    }
+
+    private void FaceHealthBar()
+    {
+        var healthBar = transform.GetChild(1);
+        var targetDirection = _playerTransform.position - transform.position;
+        var targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+        ;
+        healthBar.localRotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 160 * 
+            Time.deltaTime);
     }
 }

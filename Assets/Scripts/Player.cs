@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     protected Animator Animator;
-    private LayerMask _groundLayer;
+    public LayerMask groundLayer;
     protected GameObject CatModel;
     protected Cat CatScript;
     protected GameObject HumanModel;
@@ -18,70 +20,58 @@ public class Player : MonoBehaviour
     protected bool IsJumping;
     protected bool IsCasting;
     protected string CurrentForm;
-    protected float Health;
-    protected float MaxHealth;
+    private GameInterface _gameInterface;
     protected float JumpForce;
     private bool _isOnGround = true;
     protected float Speed;
     private bool _jump;
-    protected bool AbilityOneReady;
-    protected bool AbilityTwoReady;
-    private Image _healthImage;
-    protected Image ResourceImage;
+    private bool _abilityOneReady;
+    private bool _abilityTwoReady;
+
     protected Color ResourceColor;
-    protected Image NextFormSlot;
-    protected Image PreviousFormSlot;
-    protected Image AbilityOneSlot;
-    protected Image AbilityTwoSlot;
+    
+    protected static Image ResourceImage;
+    public static float Health; // maybe it does not make sense to have different health for each form.. idk
+    private float _maxHealth;
     private static readonly int Jumping = Animator.StringToHash("isJumping");
     private static readonly int VerticalMovement = Animator.StringToHash("verticalMovement");
+    private static readonly int Die = Animator.StringToHash("die");
     private static readonly int HorizontalMovement = Animator.StringToHash("horizontalMovement");
     protected static readonly int CastSpellOne = Animator.StringToHash("castSpellOne");
     protected static readonly int CastSpellTwo = Animator.StringToHash("castSpellTwo");
+    public static bool IsAlive;
 
     // Start is called before the first frame update
     private void Awake()
     {
-        _groundLayer = LayerMask.NameToLayer("Ground");
+        _maxHealth = 100;
+        Health = _maxHealth;
         _isOnGround = true;
         IsCasting = false;
-        AbilityTwoReady = true;
-        AbilityOneReady = true;
+        _abilityTwoReady = true;
+        _abilityOneReady = true;
         HumanScript = transform.GetComponent<Human>();
         CatScript = transform.GetComponent<Cat>();
         HumanModel = transform.GetChild(0).gameObject;
         CatModel = transform.GetChild(1).gameObject;
         Rigidbody = GetComponent<Rigidbody>();
-        _healthImage = GameObject.Find("Health").GetComponent<Image>();
         ResourceImage = GameObject.Find("Resource").GetComponent<Image>();
-        NextFormSlot = GameObject.Find("NextForm").GetComponent<Image>();
-        PreviousFormSlot = GameObject.Find("PreviousForm").GetComponent<Image>();
-        AbilityOneSlot = GameObject.Find("AbilityOne").GetComponent<Image>();
-        AbilityTwoSlot = GameObject.Find("AbilityTwo").GetComponent<Image>();
+        IsAlive = true;
+        _gameInterface = GetComponent<GameInterface>();
     }
 
     protected virtual void Movement()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.2f, LayerMask.NameToLayer("Ground")))
-        {
-            _isOnGround = true;
-            IsJumping = false;
-            Animator.SetBool(Jumping, IsJumping);
-            if (hit.transform.gameObject.CompareTag("Platform"))
-            {
-                transform.SetParent(hit.transform);
-            }
-        }
-        else
-        {
-            _isOnGround = false;
-            transform.SetParent(null);
-        }
-
+        GroundCheck();
         var humanTransform = transform;
-        var movement = (CurrentForm == "cat" ? (_horizontalInput * Speed / 5) : (_horizontalInput * Speed)) * humanTransform.right +
-                       humanTransform.forward * (((CurrentForm == "cat" ? (_verticalInput < 0 ? _verticalInput / 3 : _verticalInput) : _verticalInput)) * Speed);
+        var movement
+            = (CurrentForm == "cat"
+                  ? (_horizontalInput * Speed / 5)
+                  : (_horizontalInput * Speed)) * humanTransform.right +
+              humanTransform.forward *
+              (((CurrentForm == "cat"
+                  ? (_verticalInput < 0 ? _verticalInput / 3 : _verticalInput)
+                  : _verticalInput)) * Speed);
         movement.y = Rigidbody.velocity.y;
         if (_jump)
         {
@@ -100,6 +90,33 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void GroundCheck()
+    {
+        if (Physics.Raycast(transform.position, Vector3.down, out var hit,
+                0.2f, groundLayer))
+        {
+            _isOnGround = true;
+            IsJumping = false;
+            Animator.SetBool(Jumping, IsJumping);
+            if (hit.transform.gameObject.CompareTag("MovingLeft") || hit
+                    .transform.gameObject.CompareTag("MovingRight"))
+            {
+                transform.SetParent(hit.transform);
+            }
+            else if (hit.transform.gameObject.CompareTag("Falling"))
+            {
+                var enumerator = hit.transform.GetComponent<SpecialPlatforms>()
+                    .Fall();
+                StartCoroutine(enumerator);
+            }
+        }
+        else
+        {
+            _isOnGround = false;
+            transform.SetParent(null);
+        }
+    }
+
     protected void GetInput()
     {
         Animator.SetFloat(VerticalMovement, _verticalInput);
@@ -115,41 +132,47 @@ public class Player : MonoBehaviour
         {
             _jump = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1) && _abilityOneReady)
+        {
+            CastSpecialAbilityOne();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && _abilityTwoReady)
+        {
+            CastSpecialAbilityTwo();
+        }
     }
 
     protected virtual void Morph()
     {
-
     }
 
-    protected virtual void SpecialAbilityOne()
+    protected virtual void CastSpecialAbilityOne()
     {
         //Special Attack;
     }
 
-    protected virtual void SpecialAbilityTwo()
+    protected virtual void CastSpecialAbilityTwo()
     {
         //
     }
 
     protected void AbilityCheck()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            SpecialAbilityOne();
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SpecialAbilityTwo();
-        }
     }
+
     public void TakeDamage(int damage)
     {
-        Health -= damage;
-        _healthImage.DOFillAmount((Health / MaxHealth), 0.5f);
-        // if (Health <= 0)
-        //die
-        // Destroy(this);
+        if (Health >= 0)
+        {
+            Health -= damage;
+        }
+        else if (IsAlive)
+        {
+            //TODO: need death logic
+            Animator.SetTrigger(Die);
+            IsAlive = false;
+        }
     }
 
     protected void AbilityCooldown(int abilityNo, float cooldown)
@@ -157,15 +180,11 @@ public class Player : MonoBehaviour
         switch (abilityNo)
         {
             case 1:
-                var cooldownOneImage = AbilityOneSlot.transform.GetChild(0).GetComponent<Image>();
-                cooldownOneImage.fillAmount = 1;
-                cooldownOneImage.DOFillAmount((0), cooldown);
+                _gameInterface.ShowCooldownInActionBar(1, cooldown, CurrentForm);
                 StartCoroutine(AbilityCooldownCoroutine(abilityNo, cooldown));
                 break;
             case 2:
-                var cooldownTwoImage = AbilityTwoSlot.transform.GetChild(0).GetComponent<Image>();
-                cooldownTwoImage.fillAmount = 1;
-                cooldownTwoImage.DOFillAmount((0), cooldown);
+                _gameInterface.ShowCooldownInActionBar(2, cooldown, CurrentForm);
                 StartCoroutine(AbilityCooldownCoroutine(abilityNo, cooldown));
                 break;
         }
@@ -176,14 +195,14 @@ public class Player : MonoBehaviour
         switch (abilityNo)
         {
             case 1:
-                AbilityOneReady = false;
+                _abilityOneReady = false;
                 yield return new WaitForSeconds(cooldown);
-                AbilityOneReady = true;
+                _abilityOneReady = true;
                 break;
             case 2:
-                AbilityTwoReady = false;
+                _abilityTwoReady = false;
                 yield return new WaitForSeconds(cooldown);
-                AbilityTwoReady = true;
+                _abilityTwoReady = true;
                 break;
         }
     }

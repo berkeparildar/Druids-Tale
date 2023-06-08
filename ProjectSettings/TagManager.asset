@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Platform
   - UI
+  - MovingLeft
+  - MovingRight
+  - Falling
   layers:
   - Default
   - TransparentFX

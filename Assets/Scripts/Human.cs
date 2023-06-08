@@ -5,51 +5,42 @@ using UnityEngine;
 public class Human : Player
 {
     private AnimatorStateInfo _stateInfo;
+    public GameObject wrath;
     public GameObject healingEffect;
-    private float _mana;
+
+    public float Mana { get; set; }
+
     private float _maxMana;
-    public  Sprite abilityOneIcon;
-    public Sprite abilityTwoIcon;
-    public Sprite nextForm;
-    public Sprite previousForm;
-
-
+    
     // Start is called before the first frame update
     private void Start()
     {
         IsJumping = false;
         CurrentForm = "human";
-        MaxHealth = 100;
-        Health = MaxHealth;
-        _maxMana = 100;
-        _mana = _maxMana;
+        _maxMana = 360;
+        Mana = _maxMana;
         JumpForce = 5.0f;
         Speed = 5.0f;
         Animator = transform.GetChild(0).GetComponent<Animator>();
-        ResourceColor = new Color(0, 0, 1, 0.59f);
         ResourceImage.color = ResourceColor;
-        ResourceImage.fillAmount = 1;   
-        AbilityOneSlot.sprite = abilityOneIcon;
-        AbilityTwoSlot.sprite = abilityTwoIcon;
-        PreviousFormSlot.sprite = previousForm;
-        NextFormSlot.sprite = nextForm;
+        ResourceImage.fillAmount = 1;
+        StartCoroutine(RegenerateMana());
     }
 
     private void OnEnable()
     {
         ResourceImage.color = ResourceColor;
-        ResourceImage.fillAmount = _mana / _maxMana;
-        AbilityOneSlot.sprite = abilityOneIcon;
-        AbilityTwoSlot.sprite = abilityTwoIcon;
-        PreviousFormSlot.sprite = previousForm;
-        NextFormSlot.sprite = nextForm;
+        ResourceImage.fillAmount = Mana / _maxMana;
     }
 
     // Update is called once per frame
     void Update()
     {
         AbilityCheck();
-        Morph();
+        if (!IsCasting)
+        {
+            Morph();
+        }
         GetInput();
         _stateInfo = Animator.GetCurrentAnimatorStateInfo(0);
         if (_stateInfo.IsName("Base Layer.Spell One") ||_stateInfo.IsName("Base Layer.Spell Two"))
@@ -60,12 +51,11 @@ public class Human : Player
             }
         }
     }
-
+    
     private void FixedUpdate()
     {
         Movement();
     }
-
     protected override void Morph()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -81,24 +71,26 @@ public class Human : Player
         }
     }
 
-    protected override void SpecialAbilityOne()
+    protected override void CastSpecialAbilityOne()
     {
-        if (AbilityOneReady)
+        if (Mana > 60 && !IsCasting)
         {
-            IsCasting = true;
             Animator.SetTrigger(CastSpellOne);
+            IsCasting = true;
+            Mana -= 60;
             AbilityCooldown(1, 7);
         }
     }
 
-    protected override void SpecialAbilityTwo()
+    protected override void CastSpecialAbilityTwo()
     {
-        if (AbilityTwoReady)
+        if (Mana > 40 && !IsCasting) 
         {
-            IsCasting = true;
-            StartCoroutine(Regeneration());
             Animator.SetTrigger(CastSpellTwo);
+            IsCasting = true;
+            Mana -= 40;
             AbilityCooldown(2, 10);
+            StartCoroutine(Regeneration());
         }
     }
 
@@ -112,5 +104,26 @@ public class Human : Player
         yield return new WaitForSeconds(2);
         Health += 20;
         Destroy(healEffect);
+    }
+
+    private IEnumerator RegenerateMana()
+    {
+        while (true)
+        {
+            if (Mana <= _maxMana)
+            {
+                Mana += 1;
+            }
+
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
+    public void WrathAbility()
+    {
+        var pos = GameObject.Find("WrathInitPos").transform.position;
+        var initializedWrath = Instantiate(this.wrath, pos
+            , Quaternion.identity);
+        initializedWrath.GetComponent<Wrath>().SetDirection(transform.forward);
     }
 }

@@ -260,9 +260,10 @@ GameObject:
   - component: {fileID: 8087305711376284539}
   - component: {fileID: 3918692544574950410}
   - component: {fileID: 2728581352926152256}
+  - component: {fileID: 1120019004}
   m_Layer: 3
   m_Name: Floating Rock
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +275,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8894663271896998337}
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
@@ -325,3 +326,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.535781, y: 0.30019107, z: 0.51293373}
   m_Center: {x: 0.06230569, y: 0.13277867, z: 0.015795851}
+--- !u!114 &1120019004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8894663271896998337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d128c85e64d284e932f374c8974032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

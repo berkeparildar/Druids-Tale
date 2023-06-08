@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bear : Player
 {
+    //TODO: Coming in 2025 - Soon™ 
     void Awake()
     {
         CurrentForm = "bear";
@@ -24,14 +25,14 @@ public class Bear : Player
         base.Morph();
     }
 
-    protected override void SpecialAbilityOne()
+    protected override void CastSpecialAbilityOne()
     {
-        base.SpecialAbilityOne();
+        base.CastSpecialAbilityOne();
     }
 
-    protected override void SpecialAbilityTwo()
+    protected override void CastSpecialAbilityTwo()
     {
-        base.SpecialAbilityTwo();
+        base.CastSpecialAbilityTwo();
     }
 
     

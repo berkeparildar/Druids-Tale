@@ -1,15 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerAnimationEvents : MonoBehaviour
 {
-    private Player _player;
+    private Human _human;
+    private Cat _cat;
     public GameObject wrathModel;
-    public GameObject wrathAbility;
-    public Transform wrathInit;
-    public GameObject shredHitBox;
-    
+
+    private void Start()
+    {
+        _human = transform.GetComponentInParent<Human>();
+        _cat = transform.GetComponentInParent<Cat>();
+    }
+
     public void ActivateWrathModel()
     {
         wrathModel.SetActive(true);
@@ -22,17 +28,26 @@ public class PlayerAnimationEvents : MonoBehaviour
 
     public void InitializeWrath()
     {
-        var wrath = Instantiate(wrathAbility, wrathInit.position, Quaternion.identity);
-        wrath.GetComponent<Wrath>().SetDirection(transform.forward);
+        _human.WrathAbility();
     }
 
-    public void ActivateShredHitBox()
+    public void ShredActivated()
     {
-        shredHitBox.SetActive(true);
+        _cat.hitShred = true;
+    }
+    
+    public void ShredDeactivated()
+    {
+        _cat.hitShred = false;
     }
 
-    public void DeactivateShredHitBox()
+    public void FerociousBiteActivated()
     {
-        shredHitBox.SetActive(false);
+        _cat.hitBite = true;
+    }
+    
+    public void FerociousBiteDeactivated()
+    {
+        _cat.hitBite = false;
     }
 }
