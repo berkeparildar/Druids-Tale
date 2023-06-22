@@ -8,14 +8,7 @@ public class Cat : Player
 {
     private AnimatorStateInfo _stateInfo;
     private float _maxEnergy;
-    private float _energy;
-    public float Energy
-    {
-        get => _energy;
-        set => _energy = value;
-    }
-
-    private BoxCollider _boxCollider;
+    public float Energy { get; private set; }
     public LayerMask enemyLayer; 
     public bool hitBite;
     public bool hitShred;
@@ -24,15 +17,14 @@ public class Cat : Player
     {
         Speed = 9.0f;
         IsJumping = false;
-        CurrentForm = "cat";
-        JumpForce = 2;
+        CurrentForm = Form.Cat;
+        JumpForce = 4;
         _maxEnergy = 100;
-        _energy = _maxEnergy;
+        Energy = _maxEnergy;
         Animator = transform.GetChild(1).GetComponent<Animator>();
         ResourceColor = new Color(1, 1, 0, 0.45f);
         ResourceImage.color = ResourceColor;
         ResourceImage.fillAmount = 1;
-        _boxCollider = GetComponentInChildren<BoxCollider>();
         StartCoroutine(RegenerateEnergy());
     }
     
@@ -44,12 +36,12 @@ public class Cat : Player
         {
             if (hitBite)
             {
-                hit.transform.GetComponent<Enemy>().TakeDamage(20);
+                hit.transform.GetComponent<IEnemy>().TakeDamage(20);
                 hitBite = false;
             }
             else if (hitShred)
             {
-                StartCoroutine(BleedCoroutine(hit.transform.GetComponent<Enemy>()));
+                StartCoroutine(BleedCoroutine(hit.transform.GetComponent<IEnemy>()));
                 hitShred = false;
             }
         }
@@ -82,20 +74,27 @@ public class Cat : Player
                 CatModel.SetActive(false);
                 HumanModel.SetActive(true);
                 CatScript.enabled = false;
+                CurrentForm = Form.Human;
+                GameInterface.UpdateUIAccordingToForm();
             }
             else if (Input.GetKeyDown(KeyCode.E))
             {
-                // bear script
+                BearScript.enabled = true;
+                CatModel.SetActive(false);
+                BearModel.SetActive(true);
+                CatScript.enabled = false;
+                CurrentForm = Form.Bear;
+                GameInterface.UpdateUIAccordingToForm();
             }
         }
     }
 
     protected override void CastSpecialAbilityOne()
     {
-        if (!IsCasting)
+        if (!IsCasting && Energy >= 20)
         {
             Animator.SetTrigger(CastSpellOne);
-            _energy -= 20;
+            Energy -= 20;
             IsCasting = true;
             AbilityCooldown(1, 1);
         }
@@ -103,16 +102,16 @@ public class Cat : Player
 
     protected override void CastSpecialAbilityTwo()
     {
-        if (!IsCasting)
+        if (!IsCasting && Energy >= 40)
         {
             Animator.SetTrigger(CastSpellTwo);
-            _energy -= 40;
+            Energy -= 40;
             IsCasting = true;
             AbilityCooldown(2, 3);
         }
     }
 
-    private IEnumerator BleedCoroutine(Enemy enemy)
+    private IEnumerator BleedCoroutine(IEnemy enemy)
     {
         enemy.TakeDamage(10);
         yield return new WaitForSeconds(1);
@@ -125,9 +124,9 @@ public class Cat : Player
     {
         while (true)
         {
-            if (_energy <= _maxEnergy)
+            if (Energy <= _maxEnergy)
             {
-                _energy += 5;
+                Energy += 10;
             }
             yield return new WaitForSeconds(1);
         }

@@ -11,7 +11,10 @@ public class TweenActions : MonoBehaviour
     {
         switch (gameObject.tag) {
             case "UI":
-                GetComponent<Image>().DOColor(new Color(1, 1, 1, 0.7f), 3).SetLoops(-1, LoopType.Yoyo);
+                if (GetComponent<Image>() != null)
+                {
+                    GetComponent<Image>().DOColor(new Color(1, 1, 1, 0.7f), 3).SetLoops(-1, LoopType.Yoyo);
+                }
                 break;
         }
     }

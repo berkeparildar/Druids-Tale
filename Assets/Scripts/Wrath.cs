@@ -58,7 +58,7 @@ public class Wrath : MonoBehaviour
         var colliders = Physics.OverlapSphere(transform.position, 4, enemy);
         for (int i = 0; i < colliders.Length; i++)
         {
-            colliders[i].transform.GetComponent<Enemy>().TakeDamage(20);
+            colliders[i].transform.GetComponent<IEnemy>().TakeDamage(20);
         }
         yield return new WaitForSeconds(1);
         Destroy(tempExplosion);

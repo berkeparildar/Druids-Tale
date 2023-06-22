@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -8,12 +9,14 @@ public class PlayerAnimationEvents : MonoBehaviour
 {
     private Human _human;
     private Cat _cat;
+    private Bear _bear;
     public GameObject wrathModel;
 
     private void Start()
     {
         _human = transform.GetComponentInParent<Human>();
         _cat = transform.GetComponentInParent<Cat>();
+        _bear = transform.GetComponentInParent<Bear>();
     }
 
     public void ActivateWrathModel()
@@ -49,5 +52,15 @@ public class PlayerAnimationEvents : MonoBehaviour
     public void FerociousBiteDeactivated()
     {
         _cat.hitBite = false;
+    }
+    
+    public void SwipeActivated()
+    {
+        _bear.hitSwipe = true;
+    }
+    
+    public void SwipeDeactivated()
+    {
+        _bear.hitSwipe = false;
     }
 }

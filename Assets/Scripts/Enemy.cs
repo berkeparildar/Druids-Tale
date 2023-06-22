@@ -1,7 +1,7 @@
-using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IEnemy
 {
     private static readonly int HasTarget = Animator.StringToHash("hasTarget");
     private static readonly int Attacking = Animator.StringToHash("attacking");
@@ -16,14 +16,14 @@ public class Enemy : MonoBehaviour
     protected Rigidbody Rigidbody;
     private bool _isChasing;
     private bool _attacking;
-    private Transform _playerTransform;
     protected int AgroRange;
     protected float AttackRange;
     protected Animator Animator;
     protected CharacterController CharacterController;
-    private GameObject _player;
+    private static GameObject _player;
     private static readonly int Die = Animator.StringToHash("die");
     protected bool IsAlive;
+    private bool _isFeared;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,6 @@ public class Enemy : MonoBehaviour
         AttackRange = 1.5f;
         CharacterController = GetComponent<CharacterController>();
         _player = GameObject.Find("Player"); //TODO: this is causing problems
-        _playerTransform = _player.transform;
         IsAlive = true;
         // I am guessing where I set the position does not matter since it is set in the health-bar's start function
         _healthBar = Instantiate(healthBarPrefab, transform.position, Quaternion.identity);
@@ -48,15 +47,18 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsAlive)
+        if (IsAlive && Player.IsAlive)
         {
             _healthBarComponent.SetPositionAndHealth(transform.position, (Health / 70));
-            CheckPlayerAlive();
-            AnimationUpdate();
-            DetectPlayer();
-            if (_isChasing)
+            if (!_isFeared)
             {
-                ChasePlayer();
+                CheckPlayerAlive();
+                AnimationUpdate();
+                DetectPlayer();
+                if (_isChasing)
+                {
+                    ChasePlayer();
+                }
             }
         }
     }
@@ -64,26 +66,27 @@ public class Enemy : MonoBehaviour
     private void DetectPlayer()
     {
         var playerDistance =
-            Vector3.Distance(transform.position, _playerTransform.position);
+            Vector3.Distance(transform.position, _player.transform.position);
         if (playerDistance < AgroRange)
         {
             _isChasing = true;
+            _healthBarComponent.isInRange = true;
         }
         else
         {
             _isChasing = false;
+            _healthBarComponent.isInRange = false;
         }
     }
 
-    //TODO: Enemy AI as dum as me, need fix
     private void ChasePlayer()
     {
-        var targetDirection = _playerTransform.position - transform.position;
+        var targetDirection = _player.transform.position - transform.position;
         var targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
         ;
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 160 * 
             Time.deltaTime);
-        var playerDistance = Vector3.Distance(_playerTransform.position, transform.position);
+        var playerDistance = Vector3.Distance(_player.transform.position, transform.position);
         if (playerDistance < AttackRange)
         {
             _attacking = true;
@@ -133,4 +136,16 @@ public class Enemy : MonoBehaviour
             _isChasing = false;
         }
     }
+
+    public IEnumerator FearCoroutine()
+    {
+        _isFeared = true;
+        Debug.Log("isfeared");
+        Animator.SetBool("fear", _isFeared);
+        yield return new WaitForSeconds(3);
+        _isFeared = false;
+        Debug.Log("is not feared");
+        Animator.SetBool("fear", _isFeared);
+    }
+    
 }

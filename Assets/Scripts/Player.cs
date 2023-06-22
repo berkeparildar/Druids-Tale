@@ -1,38 +1,48 @@
 using System;
 using System.Collections;
-using DG.Tweening;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
+public enum Form
+{
+    Human,
+    Cat,
+    Bear
+}
+
 public class Player : MonoBehaviour
 {
     protected Animator Animator;
     public LayerMask groundLayer;
+    private Rigidbody _rigidbody;
+    
     protected GameObject CatModel;
     protected Cat CatScript;
     protected GameObject HumanModel;
     protected Player HumanScript;
-    protected Rigidbody Rigidbody;
+    protected GameObject BearModel;
+    protected Bear BearScript;
+    
     private float _verticalInput;
     private float _horizontalInput;
     protected bool IsJumping;
     protected bool IsCasting;
-    protected string CurrentForm;
-    private GameInterface _gameInterface;
     protected float JumpForce;
     private bool _isOnGround = true;
+    private float _maxHealth;
     protected float Speed;
     private bool _jump;
+    
+    protected GameInterface GameInterface;
     private bool _abilityOneReady;
     private bool _abilityTwoReady;
-
     protected Color ResourceColor;
-    
     protected static Image ResourceImage;
+    
     public static float Health; // maybe it does not make sense to have different health for each form.. idk
-    private float _maxHealth;
     private static readonly int Jumping = Animator.StringToHash("isJumping");
     private static readonly int VerticalMovement = Animator.StringToHash("verticalMovement");
     private static readonly int Die = Animator.StringToHash("die");
@@ -40,44 +50,41 @@ public class Player : MonoBehaviour
     protected static readonly int CastSpellOne = Animator.StringToHash("castSpellOne");
     protected static readonly int CastSpellTwo = Animator.StringToHash("castSpellTwo");
     public static bool IsAlive;
+    public static Form CurrentForm;
+    public static bool bossLevel;
 
     // Start is called before the first frame update
     private void Awake()
     {
+        _rigidbody = GetComponent<Rigidbody>();
+        HumanScript = transform.GetComponent<Human>();
+        CatScript = transform.GetComponent<Cat>();
+        BearScript = transform.GetComponent<Bear>();
+        HumanModel = transform.GetChild(0).gameObject;
+        CatModel = transform.GetChild(1).gameObject;
+        BearModel = transform.GetChild(2).gameObject;
+        GameInterface = GetComponent<GameInterface>();
+        ResourceImage = GameObject.Find("Resource").GetComponent<Image>();
         _maxHealth = 100;
         Health = _maxHealth;
         _isOnGround = true;
         IsCasting = false;
         _abilityTwoReady = true;
         _abilityOneReady = true;
-        HumanScript = transform.GetComponent<Human>();
-        CatScript = transform.GetComponent<Cat>();
-        HumanModel = transform.GetChild(0).gameObject;
-        CatModel = transform.GetChild(1).gameObject;
-        Rigidbody = GetComponent<Rigidbody>();
-        ResourceImage = GameObject.Find("Resource").GetComponent<Image>();
         IsAlive = true;
-        _gameInterface = GetComponent<GameInterface>();
     }
 
-    protected virtual void Movement()
+    protected void Movement()
     {
         GroundCheck();
         var humanTransform = transform;
-        var movement
-            = (CurrentForm == "cat"
-                  ? (_horizontalInput * Speed / 5)
-                  : (_horizontalInput * Speed)) * humanTransform.right +
-              humanTransform.forward *
-              (((CurrentForm == "cat"
-                  ? (_verticalInput < 0 ? _verticalInput / 3 : _verticalInput)
-                  : _verticalInput)) * Speed);
-        movement.y = Rigidbody.velocity.y;
+        var movement = humanTransform.forward * (_verticalInput * Speed);
+        movement.y = _rigidbody.velocity.y;
         if (_jump)
         {
             if (_isOnGround)
             {
-                Rigidbody.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
+                _rigidbody.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
                 IsJumping = true;
             }
         }
@@ -85,7 +92,7 @@ public class Player : MonoBehaviour
         {
             if (!IsCasting)
             {
-                Rigidbody.velocity = movement;
+                _rigidbody.velocity = movement;
             }
         }
     }
@@ -120,10 +127,8 @@ public class Player : MonoBehaviour
     protected void GetInput()
     {
         Animator.SetFloat(VerticalMovement, _verticalInput);
-        Animator.SetFloat(HorizontalMovement, _horizontalInput);
         Animator.SetBool(Jumping, IsJumping);
         _verticalInput = Input.GetAxis("Vertical");
-        _horizontalInput = Input.GetAxis("Horizontal");
         if (Input.GetKey(KeyCode.Space))
         {
             _jump = true;
@@ -161,17 +166,21 @@ public class Player : MonoBehaviour
     {
     }
 
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
-        if (Health >= 0)
+        if (Health > 0)
         {
             Health -= damage;
         }
-        else if (IsAlive)
+
+        if (Health <= 0)
         {
-            //TODO: need death logic
-            Animator.SetTrigger(Die);
-            IsAlive = false;
+            if (IsAlive)
+            {
+                //TODO: need death logic
+                Animator.SetTrigger(Die);
+                IsAlive = false;
+            }
         }
     }
 
@@ -180,11 +189,11 @@ public class Player : MonoBehaviour
         switch (abilityNo)
         {
             case 1:
-                _gameInterface.ShowCooldownInActionBar(1, cooldown, CurrentForm);
+                GameInterface.ShowCooldownInActionBar(1, cooldown);
                 StartCoroutine(AbilityCooldownCoroutine(abilityNo, cooldown));
                 break;
             case 2:
-                _gameInterface.ShowCooldownInActionBar(2, cooldown, CurrentForm);
+                GameInterface.ShowCooldownInActionBar(2, cooldown);
                 StartCoroutine(AbilityCooldownCoroutine(abilityNo, cooldown));
                 break;
         }
@@ -204,6 +213,24 @@ public class Player : MonoBehaviour
                 yield return new WaitForSeconds(cooldown);
                 _abilityTwoReady = true;
                 break;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name.Equals("Fall Limit"))
+        {
+            GameObject.Find("Virtual Follow Cam").GetComponent<CinemachineVirtualCamera>().Follow = null;
+            IsAlive = false;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name.Equals("Cube"))
+        {
+            other.GetComponent<BoxCollider>().isTrigger = false;
+            other.GetComponent<MeshRenderer>().enabled = true;
         }
     }
 }

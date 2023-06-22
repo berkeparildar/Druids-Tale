@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using DG.Tweening;
 using UnityEngine;
 
 public class Human : Player
@@ -7,16 +7,14 @@ public class Human : Player
     private AnimatorStateInfo _stateInfo;
     public GameObject wrath;
     public GameObject healingEffect;
-
     public float Mana { get; set; }
-
     private float _maxMana;
     
     // Start is called before the first frame update
     private void Start()
     {
         IsJumping = false;
-        CurrentForm = "human";
+        CurrentForm = Form.Human;
         _maxMana = 360;
         Mana = _maxMana;
         JumpForce = 5.0f;
@@ -25,23 +23,27 @@ public class Human : Player
         ResourceImage.color = ResourceColor;
         ResourceImage.fillAmount = 1;
         StartCoroutine(RegenerateMana());
+        GameInterface.UpdateUIAccordingToForm();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-        AbilityCheck();
-        if (!IsCasting)
+        if (IsAlive)
         {
-            Morph();
-        }
-        GetInput();
-        _stateInfo = Animator.GetCurrentAnimatorStateInfo(0);
-        if (_stateInfo.IsName("Base Layer.Spell One") ||_stateInfo.IsName("Base Layer.Spell Two"))
-        {
-            if (_stateInfo.normalizedTime >= 0.9f)
+            AbilityCheck();
+            if (!IsCasting)
             {
-                IsCasting = false;
+                Morph();
+            }
+            GetInput();
+            _stateInfo = Animator.GetCurrentAnimatorStateInfo(0);
+            if (_stateInfo.IsName("Base Layer.Spell One") ||_stateInfo.IsName("Base Layer.Spell Two"))
+            {
+                if (_stateInfo.normalizedTime >= 0.9f)
+                {
+                    IsCasting = false;
+                }
             }
         }
     }
@@ -54,14 +56,21 @@ public class Human : Player
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
+            BearScript.enabled = true;
+            HumanModel.SetActive(false);
+            BearModel.SetActive(true);
+            HumanScript.enabled = false;
+            CurrentForm = Form.Bear;
+            GameInterface.UpdateUIAccordingToForm();
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
             CatScript.enabled = true;
             HumanModel.SetActive(false);
             CatModel.SetActive(true);
             HumanScript.enabled = false;
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            //bear
+            CurrentForm = Form.Cat;
+            GameInterface.UpdateUIAccordingToForm();
         }
     }
 
@@ -97,6 +106,10 @@ public class Human : Player
         Health += 20;
         yield return new WaitForSeconds(2);
         Health += 20;
+        if (Health >= 100)
+        {
+            Health = 100;
+        }
         Destroy(healEffect);
     }
 

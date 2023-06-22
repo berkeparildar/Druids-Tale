@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 751821798733944654}
   - component: {fileID: 1860868053006884100}
   - component: {fileID: 749485816742090268}
+  - component: {fileID: 2938101566664209193}
   m_Layer: 3
   m_Name: Falling Rock
   m_TagString: Falling
@@ -238,9 +239,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5151782573517601413}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.535781, y: 0.30019107, z: 0.51293373}
   m_Center: {x: 0.06230569, y: 0.13277867, z: 0.015795851}
 --- !u!114 &749485816742090268
@@ -255,6 +264,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d128c85e64d284e932f374c8974032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &2938101566664209193
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5151782573517601413}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7968297870853129673
 GameObject:
   m_ObjectHideFlags: 0

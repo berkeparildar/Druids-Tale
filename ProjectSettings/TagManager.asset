@@ -10,6 +10,7 @@ TagManager:
   - MovingLeft
   - MovingRight
   - Falling
+  - Invisible
   layers:
   - Default
   - TransparentFX

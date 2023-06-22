@@ -9,11 +9,79 @@
   <component name="ChangeListManager">
     <list default="true" id="78b8c272-aef3-4ce2-bc43-93e8954ff9cf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SE330_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/DiabloicUI/Assets/actionbutton-mask-square.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalTextures/DiabloicUI/Assets/actionbutton-mask-square.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Ground2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Blink/Art/Weapons/LowPoly/FreeSwords/Demo/Ground2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Stones hit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Stones hit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Healing circle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Healing circle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal green.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Rocks_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalTextures/FromAssetStore/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Rocks_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Animations/InPlace/cat.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/AsianAnimal_Tiger/Animations/InPlace/cat.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Boss/Model/Maw J Laygo.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Boss/Model/Maw J Laygo.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/Animations/Enemy_model.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Animations/Enemy_model.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/Jog Forward Diagonal-left.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/Jog Forward Diagonal-left.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/Jog Forward Diagonal.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/Jog Forward Diagonal.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Left Strafe.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Left Strafe.fbm/akai_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Left Strafe.fbm/akai_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Left Strafe.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Left Strafe.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Right Strafe.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Right Strafe.fbm/akai_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Right Strafe.fbm/akai_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Right Strafe.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Right Strafe.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Slow Run.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Slow Run.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Standing 1H Cast Spell 01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Standing 1H Cast Spell 01.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Standing Death Left 01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Human/Animations/akai_e_espiritu@Standing Death Left 01.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/Animations/player_anim_controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Human/Animations/player_anim_controller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Falling Rock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Falling Rock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floating Rock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floating Rock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bear.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAnimationHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAnimationHit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Human.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpecialPlatforms.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpecialPlatforms.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TweenActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TweenActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wrath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wrath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrains/New Terrain 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrains/New Terrain 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrains/New Terrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrains/New Terrain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrains/NewLayer 1.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrains/NewLayer 1.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrains/NewLayer.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrains/NewLayer.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/boot.config" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +95,15 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/afb51423a29947c09a21689e8d96b70a1a000/ad/4d1e18c1/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bear.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckPointStone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameInterface.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Human.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InvisiblePlatformStone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAnimationEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Portal.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,7 +139,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Development Tools\Unity Editor\2021.3.23f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Development Tools\Unity Editor\2022.3.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Projects\SE330_Project -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\SE330_Project" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -75,7 +147,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Development Tools\Unity Editor\2021.3.23f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Development Tools\Unity Editor\2022.3.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Projects\SE330_Project -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\SE330_Project" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -141,7 +213,17 @@
       <workItem from="1686098957904" duration="23000" />
       <workItem from="1686099088457" duration="4964000" />
       <workItem from="1686142927266" duration="30586000" />
-      <workItem from="1686238057417" duration="1928000" />
+      <workItem from="1686238057417" duration="2725000" />
+      <workItem from="1686585756482" duration="2301000" />
+      <workItem from="1686616265586" duration="3890000" />
+      <workItem from="1686656070674" duration="850000" />
+      <workItem from="1686733793123" duration="658000" />
+      <workItem from="1686858068504" duration="2139000" />
+      <workItem from="1686861217511" duration="8321000" />
+      <workItem from="1686899197101" duration="40690000" />
+      <workItem from="1686967055388" duration="64000" />
+      <workItem from="1686967159481" duration="129000" />
+      <workItem from="1686967555220" duration="84000" />
     </task>
     <servers />
   </component>
