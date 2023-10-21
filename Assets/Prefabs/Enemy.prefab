@@ -25,6 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554703073782322707}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.17014296, y: 0.159145, z: 0.400695, w: 0.88609695}
   m_LocalPosition: {x: 0.0257, y: 0.0439, z: -0.0055}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,7 +33,6 @@ Transform:
   m_Children:
   - {fileID: 8129853183507409138}
   m_Father: {fileID: 8253025218308659545}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -154.592, y: -170.718, z: 226.568}
 --- !u!114 &554703073782322710
 MonoBehaviour:
@@ -93,6 +93,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554703074871962151}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -100,7 +101,6 @@ Transform:
   m_Children:
   - {fileID: 15774680128662092}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &554703074871962149
 MonoBehaviour:
@@ -1724,7 +1724,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e238a678851434b88c0b2c1dd7447c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sword: {fileID: 554703073782322710}
+  playerHuman: {fileID: 0}
+  playerCat: {fileID: 0}
+  playerBear: {fileID: 0}
+  enemy: {fileID: 554703074871962149}
   fireParticle: {fileID: 1758473627833946668, guid: 9b21333b068a5084ba09535839bee3c8, type: 3}
+  hitPosition: {x: 0, y: 0, z: 0}
+  damage: 5
 --- !u!4 &8253025218308659545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8447082967072642302, guid: b87550d8af1df5d46a9c0397718bac8c, type: 3}

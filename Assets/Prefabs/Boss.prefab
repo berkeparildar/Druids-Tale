@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 849421938871506322}
   m_Layer: 6
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,6 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7428439249818148918}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 12.13, z: 10.24}
   m_LocalScale: {x: 2, y: 2, z: 2}
@@ -33,7 +34,6 @@ Transform:
   m_Children:
   - {fileID: 9198928228658134716}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &3279151912187577613
 CapsuleCollider:
@@ -72,8 +72,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossUI: {fileID: 0}
   barrier: {fileID: 0}
+  agroRange: 30
   healthBar: {fileID: 0}
-  isAlive: 0
+  health: 0
+  maxHealth: 500
+  speed: 4
+  isChasing: 0
+  attacking: 0
+  attackRange: 6
+  animator: {fileID: 2974914152248042694}
+  characterController: {fileID: 849421938871506322}
+  player: {fileID: 0}
+  isAlive: 1
+  circle: {fileID: 7986504087968017091, guid: 12a56ee4630040c4eb17ae9707ed4cef, type: 3}
 --- !u!143 &849421938871506322
 CharacterController:
   m_ObjectHideFlags: 0
@@ -302,6 +313,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8082823943152860876}
   m_SourcePrefab: {fileID: 100100000, guid: 93a5b7bf2d57b124cb8b09c32461eac5, type: 3}
+--- !u!95 &2974914152248042694 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 93a5b7bf2d57b124cb8b09c32461eac5, type: 3}
+  m_PrefabInstance: {fileID: 8656922342649649495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7031875811626821279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 93a5b7bf2d57b124cb8b09c32461eac5, type: 3}

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject deathScreen;
     public CinemachineVirtualCamera vCam;
     public Transform cameraPoint;
+    public static int EnemyCount = 25;
+    public static int DeadEnemyCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainPart"))
+        {
+            player.GetComponent<GameInterface>().SetQuestFillAmount((float)DeadEnemyCount/(float)EnemyCount);
+        }
         if ((SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainPart") || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BossFight")) && !Player.IsAlive)
         {
             Cursor.lockState = CursorLockMode.Confined;

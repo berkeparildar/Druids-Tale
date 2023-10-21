@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameInterface : MonoBehaviour
@@ -50,6 +50,11 @@ public class GameInterface : MonoBehaviour
     private float _currentResource;
     private float _currentMaxResource;
 
+    public TextMeshProUGUI questText;
+    public Image questFillImage;
+    public float questFillAmount;
+    public bool questFinished;
+
     private void Start()
     {
         _healthImage = GameObject.Find("Health").GetComponent<Image>();
@@ -73,6 +78,7 @@ public class GameInterface : MonoBehaviour
     private void Update()
     {
         _healthImage.fillAmount = (Player.Health / 100);
+        UpdateQuest();
         switch (Player.CurrentForm)
         {
             case Form.Human:
@@ -85,6 +91,38 @@ public class GameInterface : MonoBehaviour
                 _resourceImage.fillAmount = (_bear.Rage / MaxRageValue);
                 break;
         }
+    }
+
+    private void UpdateQuest()
+    {
+        if (!questFinished)
+        {
+            if (SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                questText.text = "Defeat the invaders! " + GameManager.DeadEnemyCount + "/" + GameManager.EnemyCount;
+            }
+            else if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                questText.text = "Defeat the Destroyer!";
+                questFillImage.color = Color.red;
+            }
+            questFillImage.fillAmount = questFillAmount;
+        }
+        else
+        {
+            questText.enabled = false;
+            questFillImage.enabled = false;
+        }
+    }
+
+    public void SetQuestFillAmount(float amount)
+    {
+        questFillAmount = amount;
+    }
+
+    public void QuestFinished()
+    {
+        questFinished = true;
     }
 
     public void UpdateUIAccordingToForm()

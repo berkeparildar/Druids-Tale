@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySword : MonoBehaviour
@@ -10,7 +10,20 @@ public class EnemySword : MonoBehaviour
         {
             inContact = true;
         }
-        else {
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            inContact = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == "Player")
+        {
             inContact = false;
         }
     }

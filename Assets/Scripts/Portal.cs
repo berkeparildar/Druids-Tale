@@ -17,17 +17,14 @@ public class Portal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(_player.transform.position, transform.position) < 10)
+        if (Vector3.Distance(_player.transform.position, transform.position) < 10 && GameManager.DeadEnemyCount == 25)
         {
-            if (Vector3.Distance(_player.transform.position, transform.position) < 5)
-            {
                 interactScreen.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     DOTween.KillAll();
                     GameManager.LoadBoss();
                 }
-            }
             else
             {
                 interactScreen.SetActive(false);

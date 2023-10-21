@@ -1,14 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Bear : Player
 {
     public bool hitSwipe;
     public float Rage { get; private set; }
-
     public LayerMask enemyLayer; 
     private AnimatorStateInfo _stateInfo;
 

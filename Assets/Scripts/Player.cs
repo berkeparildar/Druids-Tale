@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
 using Cinemachine;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public enum Form

@@ -106,7 +106,7 @@ public class Enemy : MonoBehaviour, IEnemy
 
     public void TakeDamage(int damage)
     {
-        if (Health > 0)
+        if (Health > damage)
         {
             Health -= damage;
         }
@@ -115,10 +115,11 @@ public class Enemy : MonoBehaviour, IEnemy
             if (IsAlive)
             {
                 Animator.SetTrigger(Die);
+                IsAlive = false;
+                Destroy(_healthBar);
+                GameManager.DeadEnemyCount++;
+                Destroy(this.gameObject, 3);
             }
-            IsAlive = false;
-            Destroy(_healthBar);
-            Destroy(this.gameObject, 3);
         }
     }
 

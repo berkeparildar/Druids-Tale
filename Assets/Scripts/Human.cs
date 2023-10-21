@@ -17,7 +17,7 @@ public class Human : Player
         CurrentForm = Form.Human;
         _maxMana = 360;
         Mana = _maxMana;
-        JumpForce = 5.0f;
+        JumpForce = 2f;
         Speed = 5.0f;
         Animator = transform.GetChild(0).GetComponent<Animator>();
         ResourceImage.color = ResourceColor;

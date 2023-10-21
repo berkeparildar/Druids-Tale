@@ -15,10 +15,10 @@ public class Cat : Player
 
     private void Start()
     {
-        Speed = 9.0f;
+        Speed = 8.0f;
         IsJumping = false;
         CurrentForm = Form.Cat;
-        JumpForce = 4;
+        JumpForce = 3;
         _maxEnergy = 100;
         Energy = _maxEnergy;
         Animator = transform.GetChild(1).GetComponent<Animator>();
@@ -36,7 +36,7 @@ public class Cat : Player
         {
             if (hitBite)
             {
-                hit.transform.GetComponent<IEnemy>().TakeDamage(20);
+                hit.transform.GetComponent<IEnemy>().TakeDamage(30);
                 hitBite = false;
             }
             else if (hitShred)
